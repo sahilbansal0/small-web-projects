@@ -1,21 +1,21 @@
-.container{
-
+container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     flex-direction: column;
 }
-.head{
-text-align: center;
+
+.head {
+    text-align: center;
     align-items: center;
-
 }
-body{
 
+body {
     background-color: aqua;
 }
-h2{
+
+h2 {
     position: fixed;
     right: 20px;
     background-color: white;
@@ -23,11 +23,13 @@ h2{
     border: 2px solid white;
     border-radius: 10px;
 }
-fieldset{
+
+fieldset {
     border: 2px solid black;
     font-size: 30px;
 }
-input{
+
+input {
     border: none;
     border-radius: 10px;
     width: 50px;
@@ -35,13 +37,13 @@ input{
     text-align: center;
     font-size: 50px;
 }
-p{
-    
+
+p {
     text-align: center;
-    
     border-radius: 15px;
 }
-button{
+
+button {
     padding: 10px;
     width: 150px;
     /* border: none; */
@@ -49,65 +51,74 @@ button{
     background-color: white;
     font-size: 20px;
 }
-#hr{
+
+#hr {
     width: 500px;
-    
 }
-#hr2{
+
+#hr2 {
     width: 400px;
     transform: rotate(90deg);
     /* padding-right: 600px; */
     margin-top: 200px;
     margin-right: 960px
 }
-#hr3{
+
+.hr3 {
     width: 80px;
     transform: rotate(90deg);
     margin-right: 630px;
     margin-top: -175px;
     border-radius: 100%;
     /* position: absolute; */
-    
-
 }
-#face{
+
+.face {
     height: 50px;
     width: 50px;
-
     border: 2px solid rgb(250, 59, 59);
     border-radius: 50%;
-    margin-left: 1133px;
+    margin-left: 820px;
     margin-top: 30px;
-    /* position: absolute; */
+    /* position: fixed; */
     /* margin-right: 630px; */
 }
-#hr4{
+
+.hr4 {
     width: 80px;
     transform: rotate(90deg);
     margin-right: 630px;
     margin-top: 40px;
 }
-#hr5{
+
+.hr5 {
     width: 80px;
     transform: rotate(60deg);
     margin-right: 610px;
-    margin-top:-15px;
+    margin-top: -15px;
 }
-#hr6{
+
+.hr6 {
     width: 80px;
     transform: rotate(120deg);
     margin-top: -15px;
     margin-right: 650px;
 }
-#hr7{
+
+.hr7 {
     width: 80px;
     transform: rotate(60deg);
     margin-right: 610px;
     margin-top: 80px;
 }
-#hr8{
+
+.hr8 {
     width: 80px;
     transform: rotate(120deg);
     margin-top: -15px;
     margin-right: 650px;
+}
+
+.container2 {
+    position: fixed;
 }
