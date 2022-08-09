@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <h1 class="head">
+        Hangman
+    </h1>
+    
+    <h2>
+        Chances left
+       <p id="chance">
+        0
+    </p>
+    </h2>
+    <hr id="hr"> 
+    <hr id="hr2">
+    <div id="container2">
+    <hr id="hr3">
+    <div id="face"></div>
+    <hr id="hr4">
+    <hr id="hr5">
+    <hr id="hr6">
+    <hr id="hr7">
+    <hr id="hr8">
+</div>
+
+    <h1 id="data">your text will come here....</h1>
+    <!-- <div class="container">
+        <fieldset>
+            <legend>
+                Enter words
+            </legend>
+        <input type="text" maxlength="1" id="t1">
+        <input type="text" maxlength="1" id="t2">
+       
+        </fieldset>
+        <button onclick="show()"> match</button>
+    </div>
+     -->
+    
+</body>
+<script>
+    // function show(){
+        let arr=["h","e","l","h"]
+        var arry = new Array(arr.length);
+        let len=arr.length;
+        // document.getElementById("chance").innerHTML=`${len}`;
+      
+    //     let c1=document.getElementById("t1").value;
+    //     let c2=document.getElementById("t2").value;
+    // }
+    window.addEventListener('keypress', function key(e){
+        // console.log(e.keyCode)
+      let c=  String.fromCharCode(e.keyCode);
+      console.log(c);
+      arr.forEach((element,index) => {
+        if(element==c){
+            console.log("in array");
+            console.log(index);
+            
+            arry[index]=element;
+            console.log("show");
+            console.log(arry)
+
+    document.getElementById("data").innerHTML= `${arry}`
+
+
+        }
+        
+    
+        
+    });
+    document.getElementById("chance").innerHTML=`${len+1}`;
+
+    if (len==0) {
+        let hr4 = document.createElement('hr')
+    hr3.setAttribute('id',"hr4")
+    document.getElementById('container2').append(hr4)
+    alert("game over")
+    }
+        
+    
+    if(len==2){
+        let face = document.createElement('div')
+    face.setAttribute('id',"face")
+    document.getElementById('container2').append(face)
+    }
+    len--
+    if(len==3){
+        let hr3 = document.createElement('hr')
+    hr3.setAttribute('id',"hr3")
+    document.getElementById('container2').append(hr3)
+    }
+    if(len==1){
+        let hr5 = document.createElement('hr')
+        hr5.setAttribute("id","hr5")
+        let hr4 = document.createElement('hr')
+        hr4.setAttribute('id',"hr4")
+        let hr6 = document.createElement('hr')
+        hr6.setAttribute("id","hr6")
+        document.getElementById('container2').append(hr4,hr5,h6)
+    }
+
+    });
+    
+    
+        
+        
+    // console.log(c1)
+
+    // if(c1=="a"){
+    //     if(c2=="b"){
+    //    alert("matched")
+
+
+
+    // }
+    // else{
+    //     alert("wrong word")
+    // }
+        
+    // }
+    
+    // else{
+    //     alert("wrong")
+    // }
+    
+    
+    
+
+</script>
+</html>
