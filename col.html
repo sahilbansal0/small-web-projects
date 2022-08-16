@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color</title>
+    <style>
+        body {
+            /* background: linear-gradient(to top left, rgb(255, 189, 255), rgb(192, 209, 255)); */
+            background: radial-gradient(circle, rgb(245, 141, 222), rgb(253, 238, 101));
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+
+        }
+
+        .main:hover {
+            transform: rotate(45deg);
+            margin: 50px;
+            width: 180px;
+            height: 180px;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            /* position: relative; */
+            box-sizing: border-box;
+            padding: 10px;
+            align-items: center;
+        }
+
+        .cotainer {
+            width: 100%;
+            height: 100%;
+            border: 2px solid red;
+            box-sizing: border-box;
+
+            /* padding: 2px;/ */
+            /* position: absolute; */
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="text-align: center ; color: brown;">Color property</h2>
+    <div class="main">
+        <div class="cotainer"></div>
+    </div>
+</body>
+
+</html>
