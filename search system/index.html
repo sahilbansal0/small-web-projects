@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search system</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(250, 192, 145);
+            height: 80vh;
+            flex-direction: column;
+        }
+        
+        input {
+            padding: 10px;
+            border-radius: 10px;
+            border: 3px solid black;
+            background-color: aqua;
+        }
+        
+        div {
+            position: relative;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            height: 30%;
+            border: 4px solid rgb(22, 22, 22);
+            text-align: center;
+        }
+        
+        div:hover {
+            background-color: rgb(177, 246, 251);
+            text-shadow: 4px 4px 10px rebeccapurple;
+        }
+        
+        #place {
+            position: absolute;
+            top: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>MY-GOOGLE</h1>
+        <input type="searchs" placeholder="search places " id="search">
+        <button onclick="submit()">+</button>
+    </div>
+    <h1 id="place">
+
+    </h1>
+    <script>
+        let data = "";
+        let arr = ["sirsa", "kalanwali", "odhan", "hisar", "patoda"]
+
+        function submit() {
+
+
+            data = document.getElementById("search").value;
+            // console.log(data);
+            arr.forEach(element => {
+                let c = element[0];
+                if (c == data[0]) {
+                    document.getElementById("place").innerText = element;
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
