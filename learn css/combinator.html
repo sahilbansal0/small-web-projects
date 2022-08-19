@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinator</title>
+    <style>
+        div p {
+            /*descendent selector...select child as well as grand child */
+            color: brown;
+        }
+
+        div>h1 {
+            /*child selector....select only child*/
+            color: aquamarine;
+            font-size: 50px;
+        }
+
+        .main+p {
+            color: blue;
+        }
+
+        .main~p {
+            color: rgb(42, 165, 93);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1> sahil
+            <h2>
+                <p>
+                    inside p
+                </p>
+            </h2>
+
+        </h1>
+    </div>
+
+    <div class="main">
+
+    </div>
+    <p>
+        helo
+    </p>
+    <p>
+        ww
+    </p>
+</body>
+
+</html>

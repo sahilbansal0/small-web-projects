@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form styling</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 800px;
+        }
+
+        form {
+            background-color: aliceblue;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 30%;
+        }
+
+        input[type="text"] {
+            background-color: rgb(241, 225, 133);
+        }
+
+        input[type="password"] {
+            background-color: aqua;
+        }
+
+        input {
+            width: 90%;
+            box-sizing: border-box;
+            /* height: 20px; */
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        button {
+            width: 90%;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            background-color: coral;
+        }
+
+        input:focus {
+            background-color: skyblue;
+        }
+
+        /* option[value="red"]:hover {
+            background-color: red;
+        }
+
+        select option[value="blue"]:hover {
+            background-color: rgb(12, 33, 221);
+        } */
+    </style>
+</head>
+
+<body>
+    <h3>Login form</h3>
+    <form>
+        <label for="name">Username</label>
+        <input type="text" id="name">
+        <label for="pass">Password</label>
+        <input type="password" id="pass">
+        <button>Log in</button>
+    </form>
+    <select name="color" id="">
+        <option value="">red</option>
+        <option value="blue">blue</option>
+    </select>
+</body>
+
+</html>

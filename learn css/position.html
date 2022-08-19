@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .main {
+            background-color: rgb(239, 73, 245);
+            width: 500px;
+            height: 1500px;
+            /* position: relative; */
+            /* padding-top: 20px; */
+
+        }
+
+        h1 {
+            background-color: aqua;
+        }
+
+        #red {
+            position: absolute;
+            top: 30px;
+            right: 5px;
+        }
+
+        #blue {
+            position: sticky;
+            top: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        hello
+        <h1 id="red">red</h1>
+        <h1 id="blue">blue</h1>
+        <h1 id="green">green</h1>
+    </div>
+</body>
+
+</html>

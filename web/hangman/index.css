@@ -1,0 +1,113 @@
+.container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.head{
+text-align: center;
+    align-items: center;
+
+}
+body{
+
+    background-color: aqua;
+}
+h2{
+    position: fixed;
+    right: 20px;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+fieldset{
+    border: 2px solid black;
+    font-size: 30px;
+}
+input{
+    border: none;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 50px;
+}
+p{
+    
+    text-align: center;
+    
+    border-radius: 15px;
+}
+button{
+    padding: 10px;
+    width: 150px;
+    /* border: none; */
+    border-radius: 20px;
+    background-color: white;
+    font-size: 20px;
+}
+#hr{
+    width: 500px;
+    
+}
+#hr2{
+    width: 400px;
+    transform: rotate(90deg);
+    /* padding-right: 600px; */
+    margin-top: 200px;
+    margin-right: 960px
+}
+#hr3{
+    width: 80px;
+    transform: rotate(90deg);
+    margin-right: 630px;
+    margin-top: -175px;
+    border-radius: 100%;
+    /* position: absolute; */
+    
+
+}
+#face{
+    height: 50px;
+    width: 50px;
+
+    border: 2px solid rgb(250, 59, 59);
+    border-radius: 50%;
+    margin-left: 1133px;
+    margin-top: 30px;
+    /* position: absolute; */
+    /* margin-right: 630px; */
+}
+#hr4{
+    width: 80px;
+    transform: rotate(90deg);
+    margin-right: 630px;
+    margin-top: 40px;
+}
+#hr5{
+    width: 80px;
+    transform: rotate(60deg);
+    margin-right: 610px;
+    margin-top:-15px;
+}
+#hr6{
+    width: 80px;
+    transform: rotate(120deg);
+    margin-top: -15px;
+    margin-right: 650px;
+}
+#hr7{
+    width: 80px;
+    transform: rotate(60deg);
+    margin-right: 610px;
+    margin-top: 80px;
+}
+#hr8{
+    width: 80px;
+    transform: rotate(120deg);
+    margin-top: -15px;
+    margin-right: 650px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown</title>
+    <style>
+        .main {
+            position: relative;
+        }
+
+        #btn {
+            background-color: aquamarine;
+        }
+
+        .container ul {
+            width: 300px;
+            background-color: aqua;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: absolute;
+            /* display: none; */
+        }
+
+        .container {
+            display: none;
+        }
+
+        .container ul li:hover {
+            background-color: black;
+            color: aliceblue;
+        }
+
+        .main:hover .container {
+            display: block;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="main">
+
+        <button id="btn">Left</button>
+        <div class="container">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+    <h1>Hover on button to see list</h1>
+</body>
+
+</html>
