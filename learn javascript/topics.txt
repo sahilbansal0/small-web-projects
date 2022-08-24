@@ -1,0 +1,15 @@
+typeof
+slice 
+splice
+map
+filter
+sort
+Clouser
+primitive data types
+deep copy/shallow copy
+function
+arrow function
+hoisting
+let const
+Event loop
+event listener
