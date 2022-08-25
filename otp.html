@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>otp generator</title>
+    <style>
+        div{
+            border: 2px solid red;
+            background-color: beige;
+            width: 40em;
+            height: 20em;
+            display: flex;
+            justify-content: center;
+            border-radius: 20px;
+        }
+        input{
+            font-size: 120px;
+            border-radius: 20px;
+            width: 20rem;
+            height: 100px;
+            text-align: center;
+        }
+        #btn{
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            background-color: aquamarine;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter otp..</h1>
+        <input type="text" onkeyup="submit()" placeholder="******" maxlength="6" id="text">
+        <button id="btn" onclick="sub()">Generate</button>
+    </div>
+    <h1 id="correct"></h1>
+    <script>
+
+
+        let arr=[]
+        let newarr=[]
+        // let s=""
+
+       
+        function sub() {
+            
+        
+        let a=Math.floor(Math.random()*6)+1;
+
+        let b=Math.floor(Math.random()*6)+1;
+
+        let c=Math.floor(Math.random()*6)+1;
+
+        let d=Math.floor(Math.random()*6)+1;
+
+        let e=Math.floor(Math.random()*6)+1;
+        let f=Math.floor(Math.random()*6)+1;
+
+         arr.push(a,b,c,d,e,f);
+
+ newarr=arr.join("");
+// s=newarr.toString();
+// console.log(s);
+alert(newarr);
+// newarr=[]
+        //   s=" "
+
+        }
+function submit(){
+    let data=document.getElementById("text").value
+    console.log(data);
+    if(newarr==data){
+        console.log("win");
+document.getElementById("correct").innerHTML="your otp is correct..."
+}
+}
+
+    </script>
+</body>
+</html>
