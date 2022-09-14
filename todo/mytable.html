@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "main">
+        <div>
+            <h1>Hello user check my Table </h1>
+            <button onclick="tableprint()">Click to check</button>
+        </div>
+        <div id="demo"></div>
+    </div>
+</body>
+</html>
+<script>
+
+    let table = document.createElement('table')
+    let thead =document.createElement('thead')
+    let tr = document .createElement('tr')
+    let th1  =document.createElement('th')
+    th1.innerText="Name"
+    let th2  =document.createElement('th')
+    th2.innerText="Name"
+    let th3  =document.createElement('th')
+    th3.innerText="Name"
+    let th4  =document.createElement('th')
+    th4.innerText="Name"
+    let th5  =document.createElement('th')
+    th5.innerText="Name"
+    
+tr.append(th1,th2,th3,th4,th5)
+ thead.append(tr)
+ table.append(thead)
+    let tbody = document.createElement('tbody')
+
+    function tableprint(){
+        document.getElementById("demo").append(table)
+        console.log()
+    }
+</script>
